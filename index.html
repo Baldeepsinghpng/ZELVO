@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f1e9">
+  <meta name="description" content="ZELVO makes bold, considered clothing for every season. Find new drops, everyday essentials, and pieces built to move.">
+  <title>ZELVO — Wear your own direction</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body data-page="home">
+  <div class="announcement">ZELVO / DROP 04 <span>✳</span> Complimentary shipping over $150</div>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html" aria-label="ZELVO home"><span>ZELVO</span><i>®</i></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="new.html" data-nav-page="new">New in</a><a href="shop.html" data-nav-page="shop">Shop</a><a href="seasons.html" data-nav-page="seasons">Seasons</a><a href="studio.html" data-nav-page="studio">Studio</a><a href="contact.html" data-nav-page="contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="search-open" type="button" data-open-search>Search</button>
+        <button class="icon-action" type="button" data-open-overlay="wishlistOverlay" aria-label="Open favorites"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.7c0 5.2-8.8 10-8.8 10s-8.8-4.8-8.8-10a4.6 4.6 0 0 1 8.8-1.3 4.6 4.6 0 0 1 8.8 1.3Z"/></svg><span class="count-pill" data-wishlist-count aria-live="polite">0</span></button>
+        <button class="icon-action" type="button" data-open-overlay="cartOverlay" aria-label="Open shopping bag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span>Bag</span><span class="count-pill" data-cart-count aria-live="polite">0</span></button>
+      </div>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open site menu" aria-expanded="false" aria-controls="mobileMenu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    </div>
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+      <a href="new.html">New in</a><a href="shop.html">Shop all</a><a href="seasons.html">Seasons</a><a href="studio.html">Studio</a><a href="contact.html">Contact</a><button type="button" data-open-search>Search the collection</button>
+    </nav>
+  </header>
+  <section class="search-panel" id="globalSearchPanel" hidden>
+    <form class="search-form" id="globalSearchForm" role="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input type="search" id="globalSearchInput" placeholder="Search clothes, seasons, details…" aria-label="Search the collection"><button type="submit">Find it ↗</button></form>
+    <button class="search-close" type="button" data-close-search aria-label="Close search">Close ×</button>
+  </section>
+  <main id="top">
+    <section class="home-hero">
+      <div class="hero-copy">
+        <span class="hero-index">Independent wardrobe / 04—26</span>
+        <span class="eyebrow">A new kind of everyday</span>
+        <h1 class="display-title">Wear your<br><em>own</em><br>direction.</h1>
+        <p>Clothes with a point of view. Made to layer, live in, and take wherever you’re going next.</p>
+        <a class="button-link primary" href="new.html">Explore the new drop <span class="arrow">↗</span></a>
+      </div>
+      <div class="hero-media"><img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1500&q=88" alt="Fashion editorial portrait in a modern neutral look" fetchpriority="high"><span class="image-caption">ZELVO / Form follows feeling</span><div class="hero-stamp"><span>04</span><br>New<br>uniform</div></div>
+    </section>
+    <div class="marquee" aria-label="ZELVO brand note"><div class="marquee-track" aria-hidden="true"><span>Wear your own direction <b>✳</b> Built for movement <b>✳</b> New season, same you <b>✳</b> Make room for more <b>✳</b></span><span>Wear your own direction <b>✳</b> Built for movement <b>✳</b> New season, same you <b>✳</b> Make room for more <b>✳</b></span></div></div>
+
+    <section class="section wrap" aria-labelledby="featured-title">
+      <div class="section-header"><div><span class="eyebrow">Fresh from the studio</span><h2 id="featured-title">The pieces<br>making noise.</h2></div><a class="text-link" href="shop.html">Shop the full lineup <span class="arrow">↗</span></a></div>
+      <div class="product-grid" data-product-grid="featured" data-limit="4"></div>
+    </section>
+
+    <section class="section wrap" aria-labelledby="category-title">
+      <div class="section-header"><div><span class="eyebrow">Find your frequency</span><h2 id="category-title">Start with a feeling.</h2></div><p>Build the outfit your day calls for. Explore the full ZELVO wardrobe by category.</p></div>
+      <div class="category-grid">
+        <a class="category-card" href="shop.html?category=Outerwear"><img loading="lazy" src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=900&q=82" alt="Layered outerwear"><span class="category-copy"><h3>Outerwear</h3><span class="round-arrow">↗</span></span></a>
+        <a class="category-card" href="shop.html?category=Tops"><img loading="lazy" src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=82" alt="Everyday tops"><span class="category-copy"><h3>Tops</h3><span class="round-arrow">↗</span></span></a>
+        <a class="category-card" href="shop.html?category=Bottoms"><img loading="lazy" src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=900&q=82" alt="Everyday denim and trousers"><span class="category-copy"><h3>Bottoms</h3><span class="round-arrow">↗</span></span></a>
+        <a class="category-card" href="shop.html?category=Accessories"><img loading="lazy" src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=82" alt="Everyday accessories"><span class="category-copy"><h3>Accessories</h3><span class="round-arrow">↗</span></span></a>
+      </div>
+    </section>
+
+    <section class="feature-split" id="season-edit">
+      <div class="feature-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1300&q=85" alt="Streetwear styling in a modern city"></div>
+      <div class="feature-copy"><span class="eyebrow">Autumn / winter 2026</span><h2>Layer up.<br>Show up.</h2><p>Texture, utility, and a little extra warmth. The cold-weather edit turns a forecast into an invitation.</p><a class="button-link" href="shop.html?season=Autumn">Shop the cold-weather edit <span class="arrow">↗</span></a></div>
+    </section>
+
+    <section class="big-statement"><p>Good style isn’t a uniform.<br><span>It’s your point of view.</span></p></section>
+    <section class="newsletter" id="newsletter">
+      <div class="newsletter-inner"><span class="eyebrow">On the inside</span><h2 class="display-title">The good<br><em>stuff.</em></h2><p>Drop notes, studio stories, and first looks. This preview signup is a visual demo and does not collect email addresses.</p><a class="button-link primary" href="contact.html">Get in touch <span class="arrow">↗</span></a></div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-top"><div class="footer-brand"><a class="footer-logo" href="index.html">ZELVO</a><p>Independent clothing for wherever your day takes you. Find your fit. Make it your own.</p></div><div class="footer-column"><h3>Explore</h3><a href="shop.html">Shop all</a><a href="new.html">New in</a><a href="seasons.html">Seasonal edits</a></div><div class="footer-column"><h3>The studio</h3><a href="studio.html">Our point of view</a><a href="contact.html">Contact</a><a href="contact.html#faq">FAQs</a></div><div class="footer-column"><h3>Stay in the loop</h3><a href="contact.html">Instagram ↗</a><a href="contact.html">Pinterest ↗</a><a href="contact.html">Shipping & returns</a></div></div>
+    <div class="footer-bottom"><span>© 2026 ZELVO STUDIO · CLASS PROJECT PREVIEW</span><div><a href="contact.html#faq">Privacy</a><a href="contact.html#faq">Terms</a><span>USD · EN</span></div></div>
+  </footer>
+
+  <div class="overlay" id="cartOverlay" hidden><section class="drawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle"><header class="drawer-head"><h2 id="cartTitle">Your bag <span data-cart-count>0</span></h2><button class="drawer-close" type="button" data-close-overlay aria-label="Close shopping bag">×</button></header><div class="drawer-items" id="cartItems"></div><div class="drawer-bottom"><div class="subtotal-row"><span>Subtotal</span><strong id="cartSubtotal">$0</strong></div><p class="shipping-progress" id="shippingProgress"><span>You are $150.00 away from complimentary shipping.</span><span class="progress-track"><span></span></span></p><button class="checkout-button" type="button" id="checkoutButton" disabled>Continue to checkout</button><p class="drawer-note" id="cartNote" aria-live="polite">Taxes calculated at checkout. Demo checkout only.</p></div></section></div>
+  <div class="overlay" id="wishlistOverlay" hidden><section class="drawer" role="dialog" aria-modal="true" aria-labelledby="wishlistTitle"><header class="drawer-head"><h2 id="wishlistTitle">Your favorites <span data-wishlist-count>0</span></h2><button class="drawer-close" type="button" data-close-overlay aria-label="Close favorites">×</button></header><div class="drawer-items" id="wishlistItems"></div></section></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
