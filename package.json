@@ -1,9 +1,0 @@
-{
-  "name": "zelvo-fashion-storefront",
-  "version": "1.0.0",
-  "private": true,
-  "description": "A six-page fashion storefront class project with a local contact API.",
-  "scripts": {
-    "start": "node server.cjs"
-  }
-}
